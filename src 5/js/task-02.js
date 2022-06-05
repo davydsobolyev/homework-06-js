@@ -17,4 +17,4 @@ const new1 = ingredients.map( element => {
 
 const list = document.querySelector("#ingredients")
 
-list.push(...new1)
+list.append(...new1)

@@ -7,10 +7,10 @@ const output = document.querySelector("#name-output")
 
 input.addEventListener("input", (event) => {
 
-    console.log(input.value);
+    console.log(event.currentTarget.value);
 
-    if(input.value == ""){
-        output.textContentm = "Anonymous";
+    if(event.currentTarget.value == ""){
+        output.textContent = "Anonymous";
     }
     else{
         output.textContent = event.currentTarget.value;

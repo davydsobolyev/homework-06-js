@@ -4,9 +4,7 @@ const decrement = document.querySelector('button[data-action="decrement"]');
 const increment = document.querySelector('button[data-action="increment"]');
 
 
-decrement.addEventListener('click',(counterValue) => {
-
-    console.log("me",counterValue)
+decrement.addEventListener('click',() => {
     
     counterValue = counterValue - 1;
     console.log(counterValue)
@@ -25,8 +23,3 @@ increment.addEventListener('click',() => {
  element.textContent = counterValue;
 
 })
-
-while (true){
-    console.log(counterValue)
-
-}
